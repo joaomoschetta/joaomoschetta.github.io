@@ -1,0 +1,40 @@
+.projects {
+  padding: 3em 1.5em;
+
+  ul {
+    margin: 2em 0;
+    display: flex;
+    justify-content: center;
+
+    li {
+      padding: 10px;
+      border: 2px #0d444c solid;
+      border-radius: 15px;
+
+      img {
+        max-width: 100%;
+        border-radius: 15px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        margin: 10px 0;
+        text-align: justify;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .projects {
+    padding: 5em 2.5em;
+
+    ul {
+      margin: 3em 0 2em;
+      
+      li {
+        max-width: 500px;
+      }
+    }
+  }
+}

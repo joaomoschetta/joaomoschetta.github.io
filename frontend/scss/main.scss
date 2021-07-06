@@ -4,6 +4,9 @@
   padding: 0;
   border: 0;
   box-sizing: border-box;
+
+  text-decoration: none;
+  list-style-type: none;
 }
 
 // Import and set fonts
@@ -20,6 +23,37 @@ $bg-color: #1A2638;
 
 
 body {
+  width: 100%;
   background-color: $bg-color;
   color: white;
 }
+
+.about {
+  min-height: 720px;
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  color: $primary-color;
+  text-align: center;
+  font-size: 24px;
+}
+
+@media screen and (min-width: 720px) {
+  h3 {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  h3 {
+    font-size: 34px;
+  }
+}
+// Import components/sections
+//@import './navbar';
+@import './main';
+@import './skills';
+@import './projects';
+@import './footer';
