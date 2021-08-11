@@ -11,7 +11,7 @@ import { About } from './pages/About/index';
 import { Projects } from './pages/Projects/index';
 import { Contact } from './pages/Contact/index';
 import { Admin } from './pages/Admin/index';
-import { NavBar } from './components/NavBar';
+import { NavBar } from './components/NavBar/index';
 
 function App() {
   const routes : RouteProps[] = [
