@@ -1,0 +1,36 @@
+.HamburgerMenu-component {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+
+  background: none;
+  border: 0;
+  
+  .bar {
+    width: 40px;
+    height: 4px;
+    border-radius: 15px;
+    background: white;
+
+    transition: transform .2s ease-out;
+    
+    &:last-child {
+      width: 30px;
+    }
+  }
+  
+  &.active .bar {
+    &:nth-child(1) {
+      transform: translateY(5px) rotateZ(45deg);
+    }
+
+    &:nth-child(2) {
+      transform: translateY(-6px) rotateZ(-45deg);
+    }
+
+    &:nth-child(3) {
+      transform: translateX(-25px) scaleX(0);
+    }
+  }
+}
