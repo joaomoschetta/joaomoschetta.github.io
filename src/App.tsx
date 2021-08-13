@@ -13,6 +13,8 @@ import { Contact } from './pages/Contact/index';
 import { Admin } from './pages/Admin/index';
 import { NavBar } from './components/NavBar/index';
 
+import './styles/app.scss';
+
 function App() {
   const routes : RouteProps[] = [
     {
