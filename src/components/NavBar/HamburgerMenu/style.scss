@@ -39,4 +39,8 @@
       transform: translateX(-25px) scaleX(0);
     }
   }
+
+  @media (min-width: 1024px) {
+    display: none;
+  }
 }

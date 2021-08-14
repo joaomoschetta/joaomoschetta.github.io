@@ -57,8 +57,47 @@
     }
   }
 
-
   .close-nav {
     flex-grow: 1;
+  }
+
+  @media (min-width: 1024px) {
+    position: static;
+    width: 250px;
+
+    > div {
+      width: auto;
+      transform: translateX(0);
+    }
+
+    nav {
+      background-color: transparent;
+      padding-top: 0;
+
+      ul {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        li a {
+          background-color: transparent;
+          font-size: 1.25rem;
+
+          &.current-path {
+            background-color: $bg-primary-light-color;
+          }
+          
+          &:hover {
+            background-color: $bg-primary-light-color;
+            filter: brightness(1.05);
+          }
+        }
+      }
+    }
+
+    .close-nav {
+      display: none;
+    }
   }
 }
