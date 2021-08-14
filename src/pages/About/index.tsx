@@ -4,7 +4,7 @@ import githubIcon from '../../assets/github.png';
 import linkedinIcon from '../../assets/linkedin.svg';
 import mailIcon from '../../assets/mail.svg';
 
-// import './style.scss';
+import './style.scss';
 
 interface IContactLinks {
   name: string;
@@ -38,27 +38,29 @@ export function About() {
   return (
     <div className="about-page">
       <main>
-        <h1>João Moschetta</h1>
-        <h2>Desenvolvedor Front-end</h2>
-        <ul>
-          {contactLinks.map((contactLink, index) => {
-            return (
-              <li key={index} className={contactLink.name}>
-                <a
-                  href={contactLink.link}
-                  target="_blank"
-                  rel="noreferrer nofollow noopener external"
-                >
-                  <img
-                    src={contactLink.image}
-                    alt={contactLink.titleAndAltText}
-                    title={contactLink.titleAndAltText}
-                  />
-                </a>
-              </li>
-            );
-          })}
-        </ul>
+        <section className="titles-and-links">
+          <h1>João Moschetta</h1>
+          <h2>Desenvolvedor Front-end</h2>
+          <ul>
+            {contactLinks.map((contactLink, index) => {
+              return (
+                <li key={index} className={contactLink.name}>
+                  <a
+                    href={contactLink.link}
+                    target="_blank"
+                    rel="noreferrer nofollow noopener external"
+                  >
+                    <img
+                      src={contactLink.image}
+                      alt={contactLink.titleAndAltText}
+                      title={contactLink.titleAndAltText}
+                    />
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+        </section>
 
         <section className="about">
           <h3>SOBRE</h3>
