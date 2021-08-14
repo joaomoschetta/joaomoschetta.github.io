@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { useEffect } from "react";
 import { RouteProps, NavLink, useLocation } from 'react-router-dom';
 
 import { HamburgerMenu } from './HamburgerMenu/index';
@@ -17,7 +16,7 @@ export function NavBar(props : IProps) {
   const routes = props.routes;
 
   const navBarLinks = routes.filter(route => {
-    return route.path !== '/' && route.path !== '/admin'
+    return route.path !== '/'
   });
 
   function getNavItemName(rawName : RouteProps['path']) {
