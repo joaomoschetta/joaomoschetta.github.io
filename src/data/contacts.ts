@@ -35,7 +35,7 @@ export const contacts : IContacts[] = [
     id: 3,
     title: 'Ou me contate via celular',
     link: 'https://api.whatsapp.com/send?phone=5549988723112',
-    text: 'De preferencia ao contato via email, caso nao seja possível, estou disponível no período da tarde (segunda a segunda) para ligação, ou mensagem via Whatsapp',
+    text: 'Dê preferencia ao contato via email, caso nao seja possível, estou disponível no período da tarde (segunda a segunda) para ligação, ou mensagem via Whatsapp',
     adicionalTitle: '+55 49 9 88723112',
   },
 ];
