@@ -10,7 +10,7 @@ interface IProps {
 }
 
 export function NavBar(props : IProps) {
-  const [isHamActive, setHamActive] = useState(false);
+  const [isHamActive, setHamActive] = useState<boolean>(false);
   const location = useLocation();
 
   const routes = props.routes;
