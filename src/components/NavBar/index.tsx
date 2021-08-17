@@ -41,6 +41,7 @@ export function NavBar(props : IProps) {
               return (
                 <li 
                   key={index}
+                  onClick={() => setHamActive(false)}
                   className={isCurrentPath ? 'current-path' : ''}
                 >
                   <NavLink
