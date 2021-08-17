@@ -1,0 +1,87 @@
+@import '../../styles/colors.scss';
+
+.projects-page {
+  flex: 1;
+
+  padding: 40px 25px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 45px;
+
+  color: white;
+
+  overflow-y: auto;
+
+  h3 {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: $primary-color;
+  }
+
+  ul {
+    max-width: 750px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+
+    li {
+      width: 330px;
+      height: 370px;
+      border: 2px solid $bg-secondary-light-color;
+      display: flex;
+      flex-direction: column;
+      border-radius: 10px;
+
+      img {
+        max-width: 100%;
+        border-radius: 8px 8px 0 0;
+      }
+
+      .about {
+        flex: 1;
+
+        padding: 10px 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        strong {
+          font-size: 18px;
+          font-weight: bold;
+          color: $primary-color;
+        }
+
+        p {
+          flex: 1;
+          font-size: 16px;
+        }
+
+        button {
+          padding: 8px 15px;
+          align-self: flex-end;
+          background-color: $primary-color;
+          border: 0;
+          border-radius: 10px;
+
+          font: bold 18px 'Roboto', sans-serif;
+          color: white;
+
+          cursor: pointer;
+
+          &:hover {
+            transition: filter .2s;
+
+            filter: brightness(0.85);
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1024px) {
+    padding-top: 80px;
+    gap: 55px;
+  }
+}
