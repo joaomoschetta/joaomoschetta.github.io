@@ -46,17 +46,31 @@ export function Modal({
               ))}
             </ul>
 
-            <a href={project.demonstrationLink}>Demonstração</a>
-            <a href={project.repositoryLink}>Repositório</a>
           </div>
         </section>
 
         <section className="about">
           {project.aboutParagraphs}
         </section>
+
+        <section className="buttons">
+          <a
+            href={project.repositoryLink}
+            target="_blank"
+            rel="noreferrer nofollow noopener external"
+          >Repositório</a>
+          <a
+            href={project.demonstrationLink}
+            target="_blank"
+            rel="noreferrer nofollow noopener external"
+          >Demonstração</a>
+        </section>
       </div>
 
-      <div className="back-container" />
+      <div 
+        className="back-container"
+        onClick={() => setIsActive(false)}
+      />
     </div>
   );
 }
