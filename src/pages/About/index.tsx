@@ -1,5 +1,7 @@
 import React from "react";
 
+import { dataLinks } from '../../data/links';
+
 import githubIcon from '../../assets/github.png';
 import linkedinIcon from '../../assets/linkedin.svg';
 import mailIcon from '../../assets/mail.svg';
@@ -19,19 +21,19 @@ export function About() {
       name: 'github',
       image: githubIcon,
       titleAndAltText: 'Veja meu Github',
-      link: 'https://github.com/joaomoschetta',
+      link: dataLinks.github,
     },
     {
       name: 'linkedin',
       image: linkedinIcon,
       titleAndAltText: 'Veja meu Linkedin',
-      link: 'https://www.linkedin.com/in/jo%C3%A3o-moschetta-896ba3180/',
+      link: dataLinks.linkedin,
     },
     {
       name: 'email',
       image: mailIcon,
       titleAndAltText: 'Me envie um email joaomoschetta@gmail.com',
-      link: 'mailto:joaomoschetta@gmail.com',
+      link: `mailto:${dataLinks.email}`,
     },
   ];
 

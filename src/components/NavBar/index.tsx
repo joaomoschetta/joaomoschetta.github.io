@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { RouteProps, NavLink, useLocation } from 'react-router-dom';
 
 import { HamburgerMenu } from './HamburgerMenu/index';
+import { dataLinks } from '../../data/links';
 
 import './style.scss';
 
@@ -57,7 +58,7 @@ export function NavBar(props : IProps) {
             <li onClick={() => setHamActive(false)}>
               <a
                 target="_blank"
-                href="https://docs.google.com/document/d/1rrKFDNuoxbwHQyOVDAvufgijUYV4_lfYRAl9qJUsTLY/edit?usp=sharing"
+                href={dataLinks.curriculum}
                 rel="noreferrer nofollow noopener external"
               >CURRÍCULO</a>
             </li>
