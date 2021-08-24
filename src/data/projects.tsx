@@ -1,3 +1,5 @@
+import { dataLinks } from '../data/links';
+
 import weatherAppImage from '../assets/data/weather-app-image.png';
 import letmeaskImage from '../assets/data/letmeask.png';
 import letmeaskVideo from '../assets/data/letmeask.mp4';
@@ -13,14 +15,17 @@ export interface IProjects {
   aboutParagraphs: JSX.Element;
 }
 
+const weatherAppLinks = dataLinks.projects.weatherApp;
+const letmeaskLinks = dataLinks.projects.letmeask;
+
 export const projects : IProjects[] = [
   {
     name: 'Weather app',
     summary: 'Aplicação para obter o clima e a previsão do tempo na sua região no momento atual. Construído com React',
     tags: ['React', 'Typescript', 'TDD', 'SCSS', 'Testes automatizados', 'Jest', 'API', 'React-testing-library', 'Axios', 'Figma'],
     image: weatherAppImage,
-    repositoryLink: 'https://github.com/joaomoschetta/weather-app',
-    demonstrationLink: 'https://weather-app-joaomoschetta.herokuapp.com/',
+    repositoryLink: weatherAppLinks.repo,
+    demonstrationLink: weatherAppLinks.demo,
     aboutParagraphs: (
       <>
         <p>
@@ -44,8 +49,8 @@ export const projects : IProjects[] = [
     tags: ['React', 'Typescript', 'Firebase', 'SCSS'],
     image: letmeaskImage,
     showcaseVideoURL: letmeaskVideo,
-    repositoryLink: 'https://github.com/joaomoschetta/letmeask',
-    demonstrationLink: 'https://letmeask-joaomoschetta.vercel.app/',
+    repositoryLink: letmeaskLinks.repo,
+    demonstrationLink: letmeaskLinks.demo,
     aboutParagraphs: (
       <>
         <p>
