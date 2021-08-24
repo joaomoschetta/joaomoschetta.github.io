@@ -53,6 +53,14 @@ export function NavBar(props : IProps) {
                 </li>
               )
             })}
+
+            <li onClick={() => setHamActive(false)}>
+              <a
+                target="_blank"
+                href="https://docs.google.com/document/d/1rrKFDNuoxbwHQyOVDAvufgijUYV4_lfYRAl9qJUsTLY/edit?usp=sharing"
+                rel="noreferrer nofollow noopener external"
+              >CURRÍCULO</a>
+            </li>
           </ul>
         </nav>
 
