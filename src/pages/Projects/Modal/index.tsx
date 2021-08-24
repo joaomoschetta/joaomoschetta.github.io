@@ -30,7 +30,11 @@ export function Modal({
 
         <section className="top-row">
           {project.showcaseVideoURL ? (
-            <video>
+            <video
+              autoPlay
+              controls
+              loop
+            >
               <source src={project.showcaseVideoURL} />
             </video>
           ) : (
