@@ -36,8 +36,7 @@
     position: relative;
 
     border: solid 2px $bg-secondary-light-color;
-    box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.5);;
-
+    box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.5);
     
     * {
       color: white;
@@ -76,10 +75,14 @@
         }
       }
     }
+
+    .top-row {
+      box-sizing: border-box;
+    }
     
     img,
     video {
-      width: 100%;
+      max-width: 100%;
     }
 
     .right-column,
@@ -89,6 +92,7 @@
     
     .right-column {
       flex: 1;
+
       h3 {
         text-align: center;
       }
@@ -164,7 +168,6 @@
           filter: brightness(95%);
         }
       }
-
     }
   }
 
@@ -184,7 +187,6 @@
 
       img,
       video {
-        flex: 1;
         height: 100%;
         border-radius: 15px;
       }
