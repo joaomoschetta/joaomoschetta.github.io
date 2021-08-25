@@ -1,6 +1,6 @@
 import React from "react";
 
-import { IProjects, projects } from '../../../data/projects';
+import { IProjects } from '../../../data/projects';
 
 import './style.scss';
 
@@ -29,13 +29,13 @@ export function Modal({
         </button>
 
         <section className="top-row">
-          {project.showcaseVideoURL ? (
+          {project.showcaseVideo ? (
             <video
               autoPlay
               controls
               loop
             >
-              <source src={project.showcaseVideoURL} />
+              <source src={project.showcaseVideo} />
             </video>
           ) : (
             <img src={project.image} alt={`${project.name} showcase`} />
