@@ -9,7 +9,7 @@ export interface IProjects {
   summary: string;
   tags: string[];
   image: string;
-  showcaseVideoURL?: string;
+  showcaseVideo?: string;
   repositoryLink?: string;
   demonstrationLink?: string;
   aboutParagraphs: JSX.Element;
@@ -48,7 +48,7 @@ export const projects : IProjects[] = [
     summary: 'Plataforma de Q&A (pergunta e resposta) em tempo real. Construído com React e Google Firebase',
     tags: ['React', 'Typescript', 'Firebase', 'SCSS'],
     image: letmeaskImage,
-    showcaseVideoURL: letmeaskVideo,
+    showcaseVideo: letmeaskVideo,
     repositoryLink: letmeaskLinks.repo,
     demonstrationLink: letmeaskLinks.demo,
     aboutParagraphs: (
