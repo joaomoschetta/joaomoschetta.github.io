@@ -19,7 +19,7 @@ export function Modal({
   function closeModal() {
     setIsActive(false);
   }
-  
+
   return (
     <div className="modal-component">
       <div className="modal">
@@ -58,20 +58,32 @@ export function Modal({
         </section>
 
         <section className="buttons">
-          <a
-            href={project.repositoryLink}
-            target="_blank"
-            rel="noreferrer nofollow noopener external"
-          >Repositório</a>
-          <a
-            href={project.demonstrationLink}
-            target="_blank"
-            rel="noreferrer nofollow noopener external"
-          >Demonstração</a>
+          <button
+            disabled={project.repositoryLink ? false : true}
+          >
+            <a
+              href={project.repositoryLink}
+              target="_blank"
+              rel="noreferrer nofollow noopener external"
+            >
+              Repositório
+            </a>
+          </button>
+          <button
+            disabled={project.demonstrationLink ? false : true}
+          >
+            <a
+              href={project.demonstrationLink}
+              target="_blank"
+              rel="noreferrer nofollow noopener external"
+            >
+              Demonstração
+            </a>
+          </button>
         </section>
       </div>
 
-      <div 
+      <div
         className="back-container"
         onClick={() => setIsActive(false)}
       />

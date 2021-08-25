@@ -47,7 +47,7 @@
       font-size: 2.8125rem;
     }
     
-    button {
+    > button {
       padding: 20px 0;
       
       position: absolute;
@@ -58,6 +58,7 @@
       border: 0;
       
       cursor: pointer;
+      z-index: 2;
       
       span {
         width: 40px;
@@ -151,21 +152,39 @@
 
       background-color: $bg-secondary-light-color;
 
-      a {
-        padding: 10px;
-        background-color: $primary-color;
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        border: none;
         border-radius: 10px;
-
-        font-size: 21px;
-        font-weight: bold;
-        text-decoration: none;
+        background-color: $primary-color;
+        
         box-shadow: 0 0 10px 5px rgba(28, 40, 66, 0.2);
         
         &:hover {
           transition: transform 0.1s;
-
-          transform: scale(1.02);
+          
+          transform: scale(1.01);
           filter: brightness(95%);
+        }
+
+        &:disabled {
+          filter: brightness(70%);
+          cursor: not-allowed;
+
+          &:hover {
+            transform: none;
+          }
+        }
+
+        a {
+          padding: 10px;
+
+          font-size: 21px;
+          font-weight: bold;
+          text-decoration: none;
         }
       }
     }
