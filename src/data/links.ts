@@ -1,6 +1,6 @@
 interface IDefaultProjectLinks {
-  repo: string;
-  demo: string;
+  repo?: string;
+  demo?: string;
 };
 
 interface IDataLinks {
