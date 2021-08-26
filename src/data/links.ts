@@ -12,6 +12,7 @@ interface IDataLinks {
   projects: {
     weatherApp: IDefaultProjectLinks;
     letmeask: IDefaultProjectLinks;
+    extraUtilities: IDefaultProjectLinks;
   };
 };
 
@@ -30,5 +31,8 @@ export const dataLinks : IDataLinks = {
       repo: 'https://github.com/joaomoschetta/letmeask',
       demo: 'https://letmeask-joaomoschetta.vercel.app/',
     },
+    extraUtilities: {
+      repo: 'https://github.com/joaomoschetta/personal-extra-utilities'
+    }
   }
 }

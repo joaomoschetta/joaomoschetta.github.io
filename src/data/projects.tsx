@@ -3,6 +3,8 @@ import { dataLinks } from '../data/links';
 import weatherAppImage from '../assets/data/weather-app-image.png';
 import letmeaskImage from '../assets/data/letmeask.png';
 import letmeaskVideo from '../assets/data/letmeask.mp4';
+import extraUtilitiesImage from '../assets/data/personal-extra-utilities.png';
+import extraUtilitiesVideo from '../assets/data/personal-extra-utilities.mp4';
 
 export interface IProjects {
   name: string;
@@ -17,6 +19,7 @@ export interface IProjects {
 
 const weatherAppLinks = dataLinks.projects.weatherApp;
 const letmeaskLinks = dataLinks.projects.letmeask;
+const extraUtilitiesLinks = dataLinks.projects.extraUtilities;
 
 export const projects : IProjects[] = [
   {
@@ -70,5 +73,42 @@ export const projects : IProjects[] = [
         </ul>
       </>
     ),
+  },
+  {
+    name: 'Personal Utilities',
+    summary: 'Desenvolvido para sanar algumas necessidades pessoais: gerenciamento de tempo, temporizadores, pomodoro e anotações. Construído com Vue',
+    tags: ['Vue', 'SCSS', 'Figma'],
+    image: extraUtilitiesImage,
+    showcaseVideo: extraUtilitiesVideo,
+    repositoryLink: extraUtilitiesLinks.repo,
+    aboutParagraphs: (
+      <>
+        <p>
+          Esse foi o primeiro grande projeto que desenvolvi, a ideia partiu de uma <strong>necessidade própria</strong> de concentrar algumas funcionalidades, que eu utilizava com certa frequência, em um único local. 
+        </p>
+        <p>
+          Foi desenvolvido com <strong>Vue e SCSS</strong>. Possui as seguintes funcionalidades:
+        </p>
+        <ul>
+          <li>Temporizadores, um progressivo e outro regressivo</li>
+          <li>Temporizador para a técnica Pomodoro</li>
+          <li>Dois blocos de notas</li>
+          <li>Lista de afazeres</li>
+          <li>Planilha de gerenciamento de tempo</li>
+        </ul>
+        <p>
+          A <strong>planilha de gerenciamento de tempo</strong> merece um maior detalhamento, foi a <strong>principal funcionalidade</strong> para me levar a criar essa aplicação, precisava salvar o tempo que estudei no dia, exemplo: 4 horas estudando Vue. Após enviar, os dados podem ser vistos na outra pagina da aplicação. Essas são as funcionalidades da planilha:
+        </p>
+        <ul>
+          <li>Adicionar categoria</li>
+          <li>Salvar: Mensagem, categoria e tempo</li>
+          <li>Visualizar todos os dados salvos na planilha</li>
+          <li>Ver a soma de tempo de todos os dados de determinada categoria</li>
+        </ul>
+        <p>
+          Todos os dados da aplicação ficam salvo em local storage - nao utilizei um banco de dados pois não era uma necessidade e não era o foco de estudo quando foi desenvolvida. O design é próprio e foi desenvolvido com Figma.
+        </p>
+      </>
+    )
   }
 ]
