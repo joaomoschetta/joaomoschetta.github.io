@@ -1,4 +1,4 @@
-@import '../../styles/colors.scss';
+@import "../../styles/colors.scss";
 
 .NavBar-component {
   > div {
@@ -21,17 +21,17 @@
     width: 200px;
     height: 100vh;
     padding: 100px 25px;
-    
+
     background-color: $bg-primary-light-color;
 
     ul {
       li {
         display: flex;
-        
-        &+li {
+
+        & + li {
           margin-top: 25px;
         }
-        
+
         a {
           flex-grow: 1;
 
@@ -42,7 +42,7 @@
           color: white;
           text-decoration: none;
           text-transform: uppercase;
-          font: bold 24px 'Poppins', sans-serif;
+          font: bold 24px "Poppins", sans-serif;
 
           &:hover {
             filter: brightness(1.15);
@@ -87,7 +87,7 @@
           &.current-path {
             background-color: $bg-primary-light-color;
           }
-          
+
           &:hover {
             background-color: $bg-primary-light-color;
             filter: brightness(1.05);

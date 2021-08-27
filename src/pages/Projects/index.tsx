@@ -1,16 +1,16 @@
 import React from "react";
 import { useState } from "react";
 
-import { projects, IProjects } from '../../data/projects';
-import { Modal } from './Modal/index';
+import { projects, IProjects } from "../../data/projects";
+import { Modal } from "./Modal/index";
 
-import './style.scss';
+import "./style.scss";
 
 export function Projects() {
   const [isModalActive, setIsModalActive] = useState<boolean>(false);
   const [modalProject, setModalProject] = useState<IProjects>(projects[0]);
 
-  function handleOpenModal(project : IProjects) {
+  function handleOpenModal(project: IProjects) {
     setModalProject(project);
     setIsModalActive(true);
   }
@@ -35,10 +35,7 @@ export function Projects() {
       </ul>
 
       {isModalActive && (
-        <Modal
-          project={modalProject}
-          setIsActive={setIsModalActive}
-        />
+        <Modal project={modalProject} setIsActive={setIsModalActive} />
       )}
     </main>
   );

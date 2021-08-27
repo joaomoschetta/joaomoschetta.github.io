@@ -1,10 +1,10 @@
-import { dataLinks } from '../data/links';
+import { dataLinks } from "../data/links";
 
-import weatherAppImage from '../assets/data/weather-app-image.png';
-import letmeaskImage from '../assets/data/letmeask.png';
-import letmeaskVideo from '../assets/data/letmeask.mp4';
-import extraUtilitiesImage from '../assets/data/personal-extra-utilities.png';
-import extraUtilitiesVideo from '../assets/data/personal-extra-utilities.mp4';
+import weatherAppImage from "../assets/data/weather-app-image.png";
+import letmeaskImage from "../assets/data/letmeask.png";
+import letmeaskVideo from "../assets/data/letmeask.mp4";
+import extraUtilitiesImage from "../assets/data/personal-extra-utilities.png";
+import extraUtilitiesVideo from "../assets/data/personal-extra-utilities.mp4";
 
 export interface IProjects {
   name: string;
@@ -21,18 +21,36 @@ const weatherAppLinks = dataLinks.projects.weatherApp;
 const letmeaskLinks = dataLinks.projects.letmeask;
 const extraUtilitiesLinks = dataLinks.projects.extraUtilities;
 
-export const projects : IProjects[] = [
+export const projects: IProjects[] = [
   {
-    name: 'Weather app',
-    summary: 'Aplicação para obter o clima e a previsão do tempo na sua região no momento atual. Desenvolvido com React',
-    tags: ['React', 'Typescript', 'TDD', 'SCSS', 'Testes automatizados', 'Jest', 'API', 'React-testing-library', 'Axios', 'Figma'],
+    name: "Weather app",
+    summary:
+      "Aplicação para obter o clima e a previsão do tempo na sua região no momento atual. Desenvolvido com React",
+    tags: [
+      "React",
+      "Typescript",
+      "TDD",
+      "SCSS",
+      "Testes automatizados",
+      "Jest",
+      "API",
+      "React-testing-library",
+      "Axios",
+      "Figma",
+    ],
     image: weatherAppImage,
     repositoryLink: weatherAppLinks.repo,
     demonstrationLink: weatherAppLinks.demo,
     aboutParagraphs: (
       <>
         <p>
-          Projeto desenvolvido para aprimorar conhecimento prático com <strong>React, Typescript, testes automatizados e integração com API.</strong> A aplicação consome a API weatherapi.com utilizando Axios. Se baseia na localização atual do usuário para fornecer as seguintes informações:
+          Projeto desenvolvido para aprimorar conhecimento prático com{" "}
+          <strong>
+            React, Typescript, testes automatizados e integração com API.
+          </strong>{" "}
+          A aplicação consome a API weatherapi.com utilizando Axios. Se baseia
+          na localização atual do usuário para fornecer as seguintes
+          informações:
         </p>
         <ul>
           <li>Temperatura e condição climática atual</li>
@@ -41,15 +59,19 @@ export const projects : IProjects[] = [
           <li>Previsão do tempo e temperatura das 24 horas do dia atual</li>
         </ul>
         <p>
-          Design próprio e <strong>responsivo</strong> feito na plataforma <strong>Figma</strong>. Os componentes foram <strong>desenvolvidos utilizando TDD</strong>, testados com react-testing-library e Jest.
+          Design próprio e <strong>responsivo</strong> feito na plataforma{" "}
+          <strong>Figma</strong>. Os componentes foram{" "}
+          <strong>desenvolvidos utilizando TDD</strong>, testados com
+          react-testing-library e Jest.
         </p>
       </>
-    )
+    ),
   },
   {
-    name: 'Letmeask',
-    summary: 'Plataforma de Q&A (pergunta e resposta) em tempo real. Construído com React e Google Firebase',
-    tags: ['React', 'Typescript', 'Firebase', 'SCSS'],
+    name: "Letmeask",
+    summary:
+      "Plataforma de Q&A (pergunta e resposta) em tempo real. Construído com React e Google Firebase",
+    tags: ["React", "Typescript", "Firebase", "SCSS"],
     image: letmeaskImage,
     showcaseVideo: letmeaskVideo,
     repositoryLink: letmeaskLinks.repo,
@@ -57,10 +79,33 @@ export const projects : IProjects[] = [
     aboutParagraphs: (
       <>
         <p>
-          Aplicação desenvolvida com <strong>React e Typescript</strong>, utiliza como banco de dados o serviço 'Realtime Database' e 'Authentication' para autentificar o usuário com sua conta Google, ambos os <strong>serviços fornecidos pelo Google Firebase.</strong> Esse projeto foi feito durante a NLW-06 (curso intensivo de 1 semana) fornecido pela empresa <a target="_blank" rel="noreferrer nofollow noopener external" href="https://rocketseat.com.br/">Rocketseat</a> - se quiser saber um pouco mais sobre minha visão em relação à cursos veja o meu <a target="_blank" rel="noreferrer nofollow noopener external" href="https://www.linkedin.com/posts/joaomoschetta_tecnologia-activity-6835724403548934144-qo2W">post no Linkedin</a>.
+          Aplicação desenvolvida com <strong>React e Typescript</strong>,
+          utiliza como banco de dados o serviço 'Realtime Database' e
+          'Authentication' para autentificar o usuário com sua conta Google,
+          ambos os <strong>serviços fornecidos pelo Google Firebase.</strong>{" "}
+          Esse projeto foi feito durante a NLW-06 (curso intensivo de 1 semana)
+          fornecido pela empresa{" "}
+          <a
+            target="_blank"
+            rel="noreferrer nofollow noopener external"
+            href="https://rocketseat.com.br/"
+          >
+            Rocketseat
+          </a>{" "}
+          - se quiser saber um pouco mais sobre minha visão em relação à cursos
+          veja o meu{" "}
+          <a
+            target="_blank"
+            rel="noreferrer nofollow noopener external"
+            href="https://www.linkedin.com/posts/joaomoschetta_tecnologia-activity-6835724403548934144-qo2W"
+          >
+            post no Linkedin
+          </a>
+          .
         </p>
         <p>
-          Se trata de uma aplicação Q&amp;A (pergunta e resposta) em tempo real, possui as seguintes funcionalidades:
+          Se trata de uma aplicação Q&amp;A (pergunta e resposta) em tempo real,
+          possui as seguintes funcionalidades:
         </p>
         <ul>
           <li>Login com conta Google</li>
@@ -75,19 +120,24 @@ export const projects : IProjects[] = [
     ),
   },
   {
-    name: 'Personal Utilities',
-    summary: 'Desenvolvido para sanar algumas necessidades pessoais: gerenciamento de tempo, temporizadores, pomodoro e anotações. Desenvolvido com Vue',
-    tags: ['Vue', 'SCSS', 'Figma'],
+    name: "Personal Utilities",
+    summary:
+      "Desenvolvido para sanar algumas necessidades pessoais: gerenciamento de tempo, temporizadores, pomodoro e anotações. Desenvolvido com Vue",
+    tags: ["Vue", "SCSS", "Figma"],
     image: extraUtilitiesImage,
     showcaseVideo: extraUtilitiesVideo,
     repositoryLink: extraUtilitiesLinks.repo,
     aboutParagraphs: (
       <>
         <p>
-          Esse foi o primeiro grande projeto que desenvolvi, a ideia partiu de uma <strong>necessidade própria</strong> de concentrar algumas funcionalidades, que eu utilizava com certa frequência, em um único local. 
+          Esse foi o primeiro grande projeto que desenvolvi, a ideia partiu de
+          uma <strong>necessidade própria</strong> de concentrar algumas
+          funcionalidades, que eu utilizava com certa frequência, em um único
+          local.
         </p>
         <p>
-          Foi desenvolvido com <strong>Vue e SCSS</strong>. Possui as seguintes funcionalidades:
+          Foi desenvolvido com <strong>Vue e SCSS</strong>. Possui as seguintes
+          funcionalidades:
         </p>
         <ul>
           <li>Temporizadores, um progressivo e outro regressivo</li>
@@ -97,18 +147,30 @@ export const projects : IProjects[] = [
           <li>Planilha de gerenciamento de tempo</li>
         </ul>
         <p>
-          A <strong>planilha de gerenciamento de tempo</strong> merece um maior detalhamento, foi a <strong>principal funcionalidade</strong> para me levar a criar essa aplicação, precisava salvar o tempo que estudei no dia, exemplo: 4 horas estudando Vue. Após enviar, os dados podem ser vistos na outra pagina da aplicação. Essas são as funcionalidades da planilha:
+          A <strong>planilha de gerenciamento de tempo</strong> merece um maior
+          detalhamento, foi a <strong>principal funcionalidade</strong> para me
+          levar a criar essa aplicação, precisava salvar o tempo que estudei no
+          dia, exemplo: 4 horas estudando Vue. Após enviar, os dados podem ser
+          vistos na outra pagina da aplicação. Essas são as funcionalidades da
+          planilha:
         </p>
         <ul>
           <li>Adicionar categoria</li>
-          <li>Salvar um 'Daily Update' contendo: mensagem, categoria e tempo</li>
+          <li>
+            Salvar um 'Daily Update' contendo: mensagem, categoria e tempo
+          </li>
           <li>Visualizar todos os dados salvos na planilha</li>
-          <li>Ver a soma de tempo de todos os dados de determinada categoria</li>
+          <li>
+            Ver a soma de tempo de todos os dados de determinada categoria
+          </li>
         </ul>
         <p>
-          Todos os dados da aplicação ficam salvo em local storage - nao utilizei um banco de dados pois não era uma necessidade e não era o foco de estudo quando foi desenvolvida. O design é próprio e foi desenvolvido com Figma.
+          Todos os dados da aplicação ficam salvo em local storage - nao
+          utilizei um banco de dados pois não era uma necessidade e não era o
+          foco de estudo quando foi desenvolvida. O design é próprio e foi
+          desenvolvido com Figma.
         </p>
       </>
-    )
-  }
-]
+    ),
+  },
+];

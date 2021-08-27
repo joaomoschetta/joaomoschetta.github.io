@@ -12,20 +12,20 @@
 
   position: relative;
   z-index: 2;
-  
+
   .bar {
     width: 40px;
     height: 4px;
     border-radius: 15px;
     background: white;
 
-    transition: transform .2s ease-out;
-    
+    transition: transform 0.2s ease-out;
+
     &:last-child {
       width: 30px;
     }
   }
-  
+
   &.active .bar {
     &:nth-child(1) {
       transform: translateY(10px) rotateZ(45deg);

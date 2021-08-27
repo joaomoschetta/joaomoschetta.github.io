@@ -1,4 +1,4 @@
-@import '../../styles/colors.scss';
+@import "../../styles/colors.scss";
 
 .about-page {
   flex: 1;
@@ -42,7 +42,7 @@
       width: 38px;
       height: 38px;
 
-      border: solid 1px #D4D4D4;
+      border: solid 1px #d4d4d4;
       border-radius: 50%;
 
       padding: 5px;
@@ -51,7 +51,7 @@
       justify-content: center;
 
       transition: transform 0.1s;
-      
+
       img {
         width: 30px;
       }
@@ -92,7 +92,7 @@
 
   @media (min-width: 1200px) {
     flex-direction: row;
-    
+
     h2 {
       margin-top: 30px;
       text-align: start;

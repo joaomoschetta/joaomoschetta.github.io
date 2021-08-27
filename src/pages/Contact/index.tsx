@@ -1,11 +1,10 @@
 import React from "react";
 
-import { contacts } from '../../data/contacts';
+import { contacts } from "../../data/contacts";
 
-import './style.scss';
+import "./style.scss";
 
 export function Contact() {
-  
   return (
     <main className="contact-page">
       <h3>CONTATO</h3>
@@ -26,20 +25,20 @@ export function Contact() {
                     </div>
                   )}
 
-                  <strong
-                    className={contact.icon ? 'hasIcon' : ''}
-                  >{contact.title}</strong>
+                  <strong className={contact.icon ? "hasIcon" : ""}>
+                    {contact.title}
+                  </strong>
                 </section>
 
-                {(contact.text || contact.adicionalTitle) && (<section className="down-row">
-                  {contact.text && (
-                    <p>{contact.text}</p>
-                  )}
-                  
-                  {contact.adicionalTitle && (
-                    <strong>{contact.adicionalTitle}</strong>
-                  )}
-                </section>)}
+                {(contact.text || contact.adicionalTitle) && (
+                  <section className="down-row">
+                    {contact.text && <p>{contact.text}</p>}
+
+                    {contact.adicionalTitle && (
+                      <strong>{contact.adicionalTitle}</strong>
+                    )}
+                  </section>
+                )}
               </a>
             </li>
           );

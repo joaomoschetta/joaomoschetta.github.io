@@ -1,4 +1,4 @@
-@import '../../styles/colors.scss';
+@import "../../styles/colors.scss";
 
 .projects-page {
   flex: 1;
@@ -66,13 +66,13 @@
           border: 0;
           border-radius: 10px;
 
-          font: bold 18px 'Roboto', sans-serif;
+          font: bold 18px "Roboto", sans-serif;
           color: white;
 
           cursor: pointer;
 
           &:hover {
-            transition: filter .2s;
+            transition: filter 0.2s;
 
             filter: brightness(0.85);
           }

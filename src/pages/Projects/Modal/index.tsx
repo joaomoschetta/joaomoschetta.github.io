@@ -1,15 +1,15 @@
 import React from "react";
 
-import { IProjects } from '../../../data/projects';
+import { IProjects } from "../../../data/projects";
 
-import './style.scss';
+import "./style.scss";
 
 export interface IProps {
   project: IProjects;
   setIsActive: Function;
 }
 
-export function Modal({ project, setIsActive } : IProps) {
+export function Modal({ project, setIsActive }: IProps) {
   function closeModal() {
     setIsActive(false);
   }
@@ -24,11 +24,7 @@ export function Modal({ project, setIsActive } : IProps) {
 
         <section className="top-row">
           {project.showcaseVideo ? (
-            <video
-              autoPlay
-              controls
-              loop
-            >
+            <video autoPlay controls loop>
               <source src={project.showcaseVideo} />
             </video>
           ) : (
@@ -46,14 +42,10 @@ export function Modal({ project, setIsActive } : IProps) {
           </div>
         </section>
 
-        <section className="about">
-          {project.aboutParagraphs}
-        </section>
+        <section className="about">{project.aboutParagraphs}</section>
 
         <section className="buttons">
-          <button
-            disabled={project.repositoryLink ? false : true}
-          >
+          <button disabled={project.repositoryLink ? false : true}>
             <a
               href={project.repositoryLink}
               target="_blank"
@@ -62,9 +54,7 @@ export function Modal({ project, setIsActive } : IProps) {
               Repositório
             </a>
           </button>
-          <button
-            disabled={project.demonstrationLink ? false : true}
-          >
+          <button disabled={project.demonstrationLink ? false : true}>
             <a
               href={project.demonstrationLink}
               target="_blank"
@@ -76,10 +66,7 @@ export function Modal({ project, setIsActive } : IProps) {
         </section>
       </div>
 
-      <div
-        className="back-container"
-        onClick={closeModal}
-      />
+      <div className="back-container" onClick={closeModal} />
     </div>
   );
 }
