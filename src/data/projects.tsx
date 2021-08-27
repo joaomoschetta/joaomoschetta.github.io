@@ -24,7 +24,7 @@ const extraUtilitiesLinks = dataLinks.projects.extraUtilities;
 export const projects : IProjects[] = [
   {
     name: 'Weather app',
-    summary: 'Aplicação para obter o clima e a previsão do tempo na sua região no momento atual. Construído com React',
+    summary: 'Aplicação para obter o clima e a previsão do tempo na sua região no momento atual. Desenvolvido com React',
     tags: ['React', 'Typescript', 'TDD', 'SCSS', 'Testes automatizados', 'Jest', 'API', 'React-testing-library', 'Axios', 'Figma'],
     image: weatherAppImage,
     repositoryLink: weatherAppLinks.repo,
@@ -36,12 +36,12 @@ export const projects : IProjects[] = [
         </p>
         <ul>
           <li>Temperatura e condição climática atual</li>
-          <li>Mínima e máxima do dia</li>
+          <li>Temperatura mínima e máxima do dia</li>
           <li>Previsão do tempo dos próximos 3 dias</li>
-          <li>Previsão de tempo e temperatura das próximas 24 horas</li>
+          <li>Previsão do tempo e temperatura das 24 horas do dia atual</li>
         </ul>
         <p>
-          Design <strong>responsivo</strong> e próprio feito na plataforma <strong>Figma</strong>. Os componentes foram <strong>desenvolvidos utilizando TDD</strong>, testados com react-testing-library e Jest.
+          Design próprio e <strong>responsivo</strong> feito na plataforma <strong>Figma</strong>. Os componentes foram <strong>desenvolvidos utilizando TDD</strong>, testados com react-testing-library e Jest.
         </p>
       </>
     )
@@ -76,7 +76,7 @@ export const projects : IProjects[] = [
   },
   {
     name: 'Personal Utilities',
-    summary: 'Desenvolvido para sanar algumas necessidades pessoais: gerenciamento de tempo, temporizadores, pomodoro e anotações. Construído com Vue',
+    summary: 'Desenvolvido para sanar algumas necessidades pessoais: gerenciamento de tempo, temporizadores, pomodoro e anotações. Desenvolvido com Vue',
     tags: ['Vue', 'SCSS', 'Figma'],
     image: extraUtilitiesImage,
     showcaseVideo: extraUtilitiesVideo,
@@ -101,7 +101,7 @@ export const projects : IProjects[] = [
         </p>
         <ul>
           <li>Adicionar categoria</li>
-          <li>Salvar: Mensagem, categoria e tempo</li>
+          <li>Salvar um 'Daily Update' contendo: mensagem, categoria e tempo</li>
           <li>Visualizar todos os dados salvos na planilha</li>
           <li>Ver a soma de tempo de todos os dados de determinada categoria</li>
         </ul>

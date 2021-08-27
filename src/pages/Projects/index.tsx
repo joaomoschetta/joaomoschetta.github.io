@@ -37,7 +37,6 @@ export function Projects() {
       {isModalActive && (
         <Modal
           project={modalProject}
-          isActive={isModalActive}
           setIsActive={setIsModalActive}
         />
       )}

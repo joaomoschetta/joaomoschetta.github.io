@@ -16,7 +16,7 @@ interface IContactLinks {
 };
 
 export function About() {
-  const contactLinks : Array<IContactLinks> = [
+  const contactLinks : IContactLinks[] = [
     {
       name: 'github',
       image: githubIcon,

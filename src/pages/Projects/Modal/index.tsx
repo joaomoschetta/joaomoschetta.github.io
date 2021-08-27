@@ -6,16 +6,10 @@ import './style.scss';
 
 export interface IProps {
   project: IProjects;
-  isActive: boolean;
   setIsActive: Function;
 }
 
-export function Modal({
-  project,
-  isActive,
-  setIsActive,
-} : IProps) {
-
+export function Modal({ project, setIsActive } : IProps) {
   function closeModal() {
     setIsActive(false);
   }
@@ -49,7 +43,6 @@ export function Modal({
                 <li key={index}>{tag}</li>
               ))}
             </ul>
-
           </div>
         </section>
 
@@ -85,7 +78,7 @@ export function Modal({
 
       <div
         className="back-container"
-        onClick={() => setIsActive(false)}
+        onClick={closeModal}
       />
     </div>
   );

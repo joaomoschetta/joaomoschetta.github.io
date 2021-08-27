@@ -4,7 +4,6 @@ import mailIcon from '../assets/mail.svg';
 import githubIcon from '../assets/github.png';
 import linkedinIcon from '../assets/linkedin.svg';
 
-console.log(mailIcon);
 export interface IContacts {
   id: number;
   title: string;
@@ -41,4 +40,3 @@ export const contacts : IContacts[] = [
     adicionalTitle: '+55 49 9 88723112',
   },
 ];
-console.log(contacts[0]);

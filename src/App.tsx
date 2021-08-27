@@ -3,8 +3,8 @@ import {
   BrowserRouter,
   Switch,
   Route,
-  RouteProps,
-  Redirect
+  Redirect,
+  RouteProps
 } from 'react-router-dom';
 
 import { About } from './pages/About/index';
@@ -15,6 +15,12 @@ import { NavBar } from './components/NavBar/index';
 import './styles/app.scss';
 
 function App() {
+  function redirectToAboutPage() {
+    return (
+      <Redirect to="/sobre" />
+    );
+  }
+
   const routes : RouteProps[] = [
     {
       path: '/sobre',
@@ -35,13 +41,7 @@ function App() {
       path: '/',
       component: redirectToAboutPage,
     },
-  ]
-
-  function redirectToAboutPage() {
-    return (
-      <Redirect to="/sobre" />
-    );
-  }
+  ];
 
   return (
     <BrowserRouter>
