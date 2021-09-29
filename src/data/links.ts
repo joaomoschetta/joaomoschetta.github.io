@@ -26,7 +26,7 @@ export const dataLinks: IDataLinks = {
   projects: {
     weatherApp: {
       repo: "https://github.com/joaomoschetta/weather-app",
-      demo: "https://weather-app-joaomoschetta.herokuapp.com/",
+      demo: "https://weather-app-weld-psi.vercel.app/",
     },
     letmeask: {
       repo: "https://github.com/joaomoschetta/letmeask",
